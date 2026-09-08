@@ -7,14 +7,14 @@ public class Prime {
         if(num<=1){
             System.out.println("neither prime nor composite");
         }
-        while(c<num){
+        while(c*c<=num){
             if(num%c==0){
                 System.out.println("Composite number");
                 break;
             }
             else {c = c + 1;}
         }
-        if(c==num){
+        if(c*c>num){
             System.out.println("Prime number");
         }
     }
